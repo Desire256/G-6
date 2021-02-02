@@ -2,35 +2,31 @@
 
 
 @section('content')
-<div class="container-">
-  <div class="row">
-    <button> <a href="{{ route('registerofficer') }}" 
-      class="dropdown-item">Officers</a></button>
-  </div>
-<button>  <a href="{{ route('registerdonormoney') }}" 
-  class="dropdown-item">MoneyDonated</a></button>
-     </div>
+<div style="background:url(images/covid.jpeg);Background-repeat:no-repeat;background-size:100% 100%" class="container">
+   
+<h2 style="text-align:center; color:white;font-weight:bold;">WELCOME</h2>
+   <br><img src="images/min.jpeg" alt="logo" height="100" width="100" vertical-align="left">
+   <br><br> 
+   <div><button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:red" ><a href="{{route('registerofficer')}}">Officers</a></button></div>
+   <div><br>
+     <button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:white" ><a href="{{ route('registerdonormoney') }}">RegisterDonor</a></button>
+     </div><br>
 <div>
-  <button>  <a href="{{ route('patientlist') }}" 
-    class="dropdown-item">Patients</a></button>
-  </div>
+     <button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:white"><a href="{{ route('patientlist') }}">Patients</a></button>
+   </div><br>
   <div>
-    <button>  <a href="{{ route('money') }}" 
-      class="dropdown-item">MonthlySalary</a></button>
-    </div>
-    <div> <button> <a href="{{ route('graphs') }}" 
-      class="dropdown-item">Graphs</a></button>
-    </div>
+    <button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:white">  <a href="{{ route('money') }}">MonthlySalary</a></button>
+    </div><br>
+    <div> <button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:white"> <a href="{{ route('graphs') }}">Graphs</a></button>
+    </div><br>
     <div>
-      <button>  <a href="{{ route('graphical') }}" 
-        class="dropdown-item">Charts</a> </button>
-    </div>
-    <div> <button>  <a class="dropdown-item" href="{{ route('logout') }}"
+      <button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:white">  <a href="{{ route('graphical') }}">Charts</a> </button>
+    </div><br>
+    <div> <button type="button" class="btn btn-primary" style="background-color:black; border-radius:100px;font-weight:bold;color:white">  <a href="{{ route('logout') }}"
       onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
        {{ __('Logout') }}
    </a></button>
   </div>
-</div>
 </div>
 @endsection

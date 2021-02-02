@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<br><img src="images/min.jpeg" alt="logo" height="100" width="100" vertical-align="left">
+   <br><br> 
 <div class="container">
 
                 <div class="card">

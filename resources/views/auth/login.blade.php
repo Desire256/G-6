@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<style>body {background:url(images/face.jpg);Background-repeat:no-repeat;background-size:100% 200%}</style>
 <div class="container mt-4">
     <div class="row justify-content-center mt-4">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div style="background-color:paleblue;"class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

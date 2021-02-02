@@ -1,8 +1,10 @@
 @extends('layouts.app')
 @section('content')
 <style>
-    
+ form,body{background-color:powderblue}   
 </style>
+<br><img src="images/min.jpeg" alt="logo" height="100" width="100" vertical-align="left">
+   <br><br> 
 <div class="container mt-5">
     <div class="grid">
         <div class="grid">

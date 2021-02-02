@@ -2,10 +2,10 @@
 
 @section('content')
 <style>
-  
-
-    
+form,body{background-color:powderblue}  
 </style>
+<br><img src="images/min.jpeg" alt="logo" height="100" width="100" vertical-align="left">
+   <br>
     <div class="container mt-5">    
         <div class="grid">
             @if (session('status'))
@@ -16,7 +16,7 @@
         </div>
         @endif
 
-            <div class="shadow">
+            <div  style="background-color:powderblue" class="shadow">
 
                 <div class="h2 text-center mt-4 mb-5">Register</div>
                 <form method="POST" action="{{ route('registerofficer') }}" class="m-5">
@@ -74,6 +74,8 @@
 
         </div>
     </div>
+    <a href="home"><button style="border-radius:100px;font-weight:bold;text-align:right;" class="btn btn-primary">Home</button></a>
+
 @endsection
 
 

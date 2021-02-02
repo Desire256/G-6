@@ -1,18 +1,20 @@
 @extends('layouts.app');
 
 @section('content')
-
-<div class="container-">
+<style>
+form,body{background-color:powderblue}  
+</style>
+<br><img src="images/min.jpeg" alt="logo" height="100" width="100" vertical-align="left">
+   <br><br> 
+<div class="container">
     <div class="row justify-content-center">
         @if (count($officers))
         
          <table class="table">
-            <thead>
+         <thead class="thead-dark">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">officerName</th>
+                <th scope="col">AssignedHospital</th>
               </tr>
             </thead>
             <tbody>
@@ -22,8 +24,8 @@
                     <td>{{ 
                     $officer->hospital_name
                      }}</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td></td>
+                    <td></td>
                   </tr>
                     
                 @endforeach
@@ -33,7 +35,7 @@
             
         @endif
     </div>
-    <div class="footer">
+    <div style="" class="container">
         <a href="{{ route("home") }}">BackHome</a>
     </div>
 </div>
