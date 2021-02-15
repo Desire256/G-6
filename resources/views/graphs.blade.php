@@ -2,7 +2,11 @@
 
 @section('content')
 <style>
-      
+      body{
+        background-Color:;
+      }
+      p{
+        font-weight:bold}
 </style>
 <div class="layout">
       <!-- Chart's container -->
@@ -86,5 +90,8 @@
  <script>
    
  </script>
+ <div style="" class="container">
+        <a href="{{ route("home") }}">BackHome</a>
+    </div>
     
 @endsection

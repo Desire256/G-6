@@ -11,7 +11,7 @@ use APP\Http\Controllers\OfficerListsController;
 use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view("auth.login");
 });
 Route::get('/officerlist',function(){
      $all_officers = DB::table('health_officers_generals')->get();
@@ -21,6 +21,17 @@ Route::get('/officerlist',function(){
      else{
          return view("officerLists");
      }
+
+});
+//donorlist
+Route::get('/donorlist',function(){
+    $all_officers = DB::table('register_donor_money')->get();
+    if(count($all_officers)){
+       return view("donorlist", ['donors'=>$all_officers]);
+    }
+    else{
+        return view("donorlist");
+    }
 
 });
 Route::get('/registerofficer', [RegisterHealthOfficer::class,'index'])->name('registerofficer');
@@ -36,4 +47,3 @@ Route::get('/graphical',[HierarchicalController::class, 'index'])->name('graphic
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-

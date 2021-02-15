@@ -153,7 +153,9 @@
     </div>
     
    
-</div>
+</div><div style="" class="container">
+        <a href="{{ route("home") }}">BackHome</a>
+    </div>
 
     
 @endsection

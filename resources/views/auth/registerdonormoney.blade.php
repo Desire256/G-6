@@ -95,8 +95,8 @@
                 </div>
                 
                 <div class="form-group ml-6 mb-4 ">
-                        <button type="submit" class="btn btn-primary">
-                            {{ __('Register') }}
+                        <button  type="submit" class="btn btn-primary">
+                            {{ __('Register') }} 
                         </button>
                     
                 </div>
@@ -104,7 +104,10 @@
         </div>
     </div>
 </div>
-</div>
+
+</div><div style="" class="container">
+        <a href="{{ route("home") }}">BackHome</a>
+    </div>
 
    
 @endsection

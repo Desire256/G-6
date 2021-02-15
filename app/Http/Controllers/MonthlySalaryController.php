@@ -34,6 +34,7 @@ class MonthlySalaryController extends Controller
             ->select('amount')
             ->where('id', '=', 1)->
             get();
+            //dd($donor_money);
            // print_r($donor_money);
             if(count($donor_money)){
                 $this->default_month = 'January';
@@ -86,6 +87,7 @@ class MonthlySalaryController extends Controller
         ->where('amount', ">", 100000000)
         ->get();
         //print_r($months);
+        //dd($diff_money);
       if($diff_money >0){
         $remaining_amount = $this->cal_payments($diff_money, 5000000);
         $director_money_national_referal = 5000000;

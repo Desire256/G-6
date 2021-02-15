@@ -177,5 +177,6 @@ form,body{background-color:powderblue}
        
     </div>
 </div>
+<a href="home"><button class="btn btn-primary">Home</button></a>
 
 @endsection

@@ -2,6 +2,7 @@
 
 
 @section('content')
+<a href="home"><button class="btn btn-primary">Home</button></a><br>
 <br><img src="images/min.jpeg" alt="logo" height="100" width="100" vertical-align="left">
    <br><br> 
     <div class="container">

@@ -41,6 +41,7 @@ class RegisterDonorMoneyController extends Controller
 
         ]
         );
-        return back();
+        return redirect("/donorlist");
+        //DB::table('register_donor_money')->get();
     }
 }
